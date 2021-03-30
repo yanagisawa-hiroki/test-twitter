@@ -3581,6 +3581,8 @@
             var twitter_card = '<meta name="twitter:card" content="summary_large_image">';
             var twitter_title = '<meta name="twitter:card" content="エングレイヴィング">';
             var twitter_image = '<meta property="twitter:image" content="' + image + '">';
+            document.getElementsByTagName("head")[0].appendChild(twitter_card);
+            document.getElementsByTagName("head")[0].appendChild(twitter_title);
             document.getElementsByTagName("head")[0].appendChild(twitter_image);
             // $('head meta:last').after(twitter_image);
             // $("meta[name ='twitter:image']").attr('content', image);
