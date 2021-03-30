@@ -3521,7 +3521,7 @@
             }
         </script>
         <script>
-          $(function(){
+          window.addEventListener('load', function() {
             var params = (new URL(document.location)).searchParams;
             var zodiacsign = params.get('zodiacsign');
             var description = '';
@@ -3590,7 +3590,7 @@
             document.getElementsByTagName("body")[0].appendChild(twitter_image);
             // $('head meta:last').after(twitter_image);
             // $("meta[name ='twitter:image']").attr('content', image);
-          });
+          })
         </script>
       </body>
 </html>
